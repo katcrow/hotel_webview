@@ -86,6 +86,44 @@ class _HomeScreenState extends State<HomeScreen> {
               height: height,
               width: width,
             ),
+            Positioned(
+              left: 32,
+              bottom: 240,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '6월에 어디 가지?',
+                    style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    '양평 이쁜 카페 어때?!',
+                    style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 16),
+                  Text(
+                    '6시간 낭만 여행',
+                    style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+            Positioned(
+              bottom: 130,
+              right: 50,
+              child: ElevatedButton(
+                  onPressed: () {},
+                  child: Row(
+                    children: [
+                      Icon(Icons.add, color: Colors.black54),
+                      SizedBox(width: 3),
+                      Text(
+                        '구독',
+                        style: TextStyle(fontWeight: FontWeight.w500),
+                      ),
+                    ],
+                  )),
+            ),
           ],
         ),
       ),
